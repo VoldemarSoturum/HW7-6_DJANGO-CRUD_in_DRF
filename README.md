@@ -1,0 +1,2 @@
+# HW7-6_DJANGO-CRUD_in_DRF
+HW7-6-NETOLOGY-DJANGO-CRUD_in_DRF_Stoks&amp;Produts
