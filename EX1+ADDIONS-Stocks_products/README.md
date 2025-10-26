@@ -13,6 +13,7 @@ REST API для управления продуктами и складами с
 - [Скриншоты БД (после запросов)](#скриншоты-бд-после-запросов)
 - [Тесты](#тесты)
 - [Полезные команды](#полезные-команды)
+- [!!!!Дополнительная функциональность по заданию!!!!!](#!!!!Дополнительная-функциональность-по-заданию!!!!!)
 
 ---
 
@@ -88,9 +89,9 @@ REST_FRAMEWORK = {
 - `Stock(id, address)`
 - `StockProduct(stock -> Stock, product -> Product, quantity, price)` — промежуточная модель (позиции на складе)
 
-**Диаграмма БД (вставьте картинку сюда):**
+**Диаграмма БД:**
 ```
-![DB Diagram](docs/db-diagram.png)
+![DB Diagram](https://github.com/VoldemarSoturum/HW7-6_DJANGO-CRUD_in_DRF/blob/main/EX1%2BADDIONS-Stocks_products/FOR_README/netology_stocks_products%20-%20public.png)
 ```
 
 ---
@@ -274,38 +275,58 @@ Content-Type: application/json
 > Можно добавить краткое описание под каждым скрином.
 
 - Создание продукта:  
-  `![create-product](docs/create-product.png)`
+  `![create-product](https://github.com/VoldemarSoturum/HW7-6_DJANGO-CRUD_in_DRF/blob/main/EX1%2BADDIONS-Stocks_products/FOR_README/2025-10-26%20195311.png)`
 
 - Список продуктов:  
-  `![list-products](docs/list-products.png)`
+  `![list-products](https://github.com/VoldemarSoturum/HW7-6_DJANGO-CRUD_in_DRF/blob/main/EX1%2BADDIONS-Stocks_products/FOR_README/2025-10-26%20195311.png)`
 
-- Поиск `?search=помидор`:  
-  `![search-products](docs/search-products.png)`
+- Список обновление продуктов:  
+  `![update-products](https://github.com/VoldemarSoturum/HW7-6_DJANGO-CRUD_in_DRF/blob/main/EX1%2BADDIONS-Stocks_products/FOR_README/2025-10-26%20195400.png)`
 
+- Удаление продукта:  
+  `![delete-products](https://github.com/VoldemarSoturum/HW7-6_DJANGO-CRUD_in_DRF/blob/main/EX1%2BADDIONS-Stocks_products/FOR_README/2025-10-26%20195419.png)`
+
+- Создание продуктов:  
+  `![create-products-1](https://github.com/VoldemarSoturum/HW7-6_DJANGO-CRUD_in_DRF/blob/main/EX1%2BADDIONS-Stocks_products/FOR_README/2025-10-26%20195440.png)`
+  `![create-products-2](https://github.com/VoldemarSoturum/HW7-6_DJANGO-CRUD_in_DRF/blob/main/EX1%2BADDIONS-Stocks_products/FOR_README/2025-10-26%20195457.png)`
+  `![create-products-3](https://github.com/VoldemarSoturum/HW7-6_DJANGO-CRUD_in_DRF/blob/main/EX1%2BADDIONS-Stocks_products/FOR_README/2025-10-26%20195513.png)`
+
+- Поиск по названию и описанию продукта `?search=помидор`:  
+  `![search-products](https://github.com/VoldemarSoturum/HW7-6_DJANGO-CRUD_in_DRF/blob/main/EX1%2BADDIONS-Stocks_products/FOR_README/2025-10-26%20200003.png)`
+
+
+- Поиск по нескольким словам`?search=помидор`:  
+  `![search-products-someWrd](https://github.com/VoldemarSoturum/HW7-6_DJANGO-CRUD_in_DRF/blob/main/EX1%2BADDIONS-Stocks_products/FOR_README/2025-10-26%20200151.png)`
+
+- Пагенация:  
+  `![pagination-products](https://github.com/VoldemarSoturum/HW7-6_DJANGO-CRUD_in_DRF/blob/main/EX1%2BADDIONS-Stocks_products/FOR_README/2025-10-26%20200219.png)`
+  
 - Создание склада с позициями:  
-  `![create-stock](docs/create-stock.png)`
-
+  `![create-stock](https://github.com/VoldemarSoturum/HW7-6_DJANGO-CRUD_in_DRF/blob/main/EX1%2BADDIONS-Stocks_products/FOR_README/2025-10-26%20200310.png)`
+- Вывод склада с позициями:  
+  `![view-stock](https://github.com/VoldemarSoturum/HW7-6_DJANGO-CRUD_in_DRF/blob/main/EX1%2BADDIONS-Stocks_products/FOR_README/2025-10-26%20201054.png)`
+  
 - Обновление позиций на складе (PATCH):  
-  `![patch-stock-positions](docs/patch-stock-positions.png)`
+  `![patch-stock-positions](https://github.com/VoldemarSoturum/HW7-6_DJANGO-CRUD_in_DRF/blob/main/EX1%2BADDIONS-Stocks_products/FOR_README/2025-10-26%20201225.png)`
 
 - Фильтр складов `?products=2`:  
-  `![filter-stocks-by-product](docs/filter-stocks-by-product.png)`
+  `![filter-stocks-by-product](https://github.com/VoldemarSoturum/HW7-6_DJANGO-CRUD_in_DRF/blob/main/EX1%2BADDIONS-Stocks_products/FOR_README/2025-10-26%20203022.png)`
 
 ---
 
 ## Скриншоты БД (после запросов)
 
 - Диаграмма БД:  
-  `![db-diagram](docs/db-diagram.png)`
+  `![db-diagram](https://github.com/VoldemarSoturum/HW7-6_DJANGO-CRUD_in_DRF/blob/main/EX1%2BADDIONS-Stocks_products/FOR_README/netology_stocks_products%20-%20public.png)`
 
 - Таблица `product` (после заполнения):  
-  `![db-products-table](docs/db-products-table.png)`
+  `![db-products-table](https://github.com/VoldemarSoturum/HW7-6_DJANGO-CRUD_in_DRF/blob/main/EX1%2BADDIONS-Stocks_products/FOR_README/2025-10-26%20210829.png)`
 
 - Таблица `stock`:  
-  `![db-stocks-table](docs/db-stocks-table.png)`
+  `![db-stocks-table](https://github.com/VoldemarSoturum/HW7-6_DJANGO-CRUD_in_DRF/blob/main/EX1%2BADDIONS-Stocks_products/FOR_README/2025-10-26%20210847.png)`
 
 - Таблица `stockproduct` (позиции):  
-  `![db-stockproducts-table](docs/db-stockproducts-table.png)`
+  `![db-stockproducts-table](https://github.com/VoldemarSoturum/HW7-6_DJANGO-CRUD_in_DRF/blob/main/EX1%2BADDIONS-Stocks_products/FOR_README/2025-10-26%20210907.png)`
 
 ---
 
